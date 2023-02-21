@@ -1,0 +1,24 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-title>
+      Tracking CEP
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+  <ion-header collapse="condense">
+    <ion-toolbar color="primary">
+      <ion-title size="large">Tracking CEP</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-toolbar color="primary">
+    <ion-searchbar color="dark" placeholder="CEP" (ionChange)="localizarObjeto($event)"></ion-searchbar>
+  </ion-toolbar>
+
+  <ion-content [fullscreen]="true">
+    <ion-list>
+    <ion-item>Bairro: {{bairro}}</ion-item>
+    <ion-item>Logradouro: {{logradouro}}</ion-item>
+    <ion-item>Cidade: {{localidade}}</ion-item>
+    <ion-item>Estado: {{uf}}</ion-item>
+    </ion-list>
+  </ion-content>
